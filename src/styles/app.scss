@@ -1,0 +1,10 @@
+$font-stack: Poppins;
+
+body {
+  font: 100% $font-stack;
+  background-color: #cac9c9;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+}

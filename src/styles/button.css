@@ -1,0 +1,57 @@
+.text-clear {
+  text-decoration: none;
+  color: inherit;
+}
+
+.buttonComponent {
+  display: flex;
+  width: 150px;
+  padding: 1em;
+  justify-content: space-evenly;
+  font-weight: 800;
+  border-radius: 4px;
+  align-items: center;
+  cursor: pointer;
+  background: #e8e8e8;
+}
+.buttonComponent.sortButton {
+  display: flex;
+  width: 150px;
+  padding: 1em;
+  justify-content: space-evenly;
+  font-weight: 800;
+  border-radius: 4px;
+  align-items: center;
+  cursor: pointer;
+  background: #19d2ce;
+}
+.buttonComponent.backButton {
+  display: flex;
+  width: 150px;
+  padding: 1em;
+  justify-content: space-evenly;
+  font-weight: 800;
+  border-radius: 4px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sortTypes {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+}
+.sortTypes > button {
+  background: #f5f4f4;
+  font-weight: 800;
+  border: 1px solid #ffffff;
+  padding: 1em 3em;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+.sortTypes > button:hover {
+  box-shadow: -2px 1px 20px -2px rgba(0, 0, 0, 0.51);
+}
+
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,25 @@
+$tabletWidth: 1025px;
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+
+  > label {
+    font-size: 13px;
+    @media (max-width: $tabletWidth) {
+      font-size: 15px;
+    }
+  }
+
+  >.tournament_info {
+    font-size: 18px;
+    padding: 1em;
+    border: none;
+    border-bottom: 1px solid black;
+    background: inherit;
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.modalContainer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.modalContainer > .bgShadow {
+  width: 100vw;
+  height: 100vh;
+  background-color: #474646;
+  opacity: 0.5;
+  position: absolute;
+}
+.modalContainer .modalWrapper {
+  background-color: #ffffff;
+  opacity: 1;
+  z-index: 3;
+}
+.modalContainer .modalWrapper > .modalHeader {
+  background-color: #cbcbcb;
+  padding: 1em;
+}
+.modalContainer .modalWrapper > .modalContent {
+  padding: 2em 3em;
+}
+.modalContainer .modalWrapper > .modalContent span {
+  font-weight: 800;
+}
+.modalContainer .modalWrapper > .modalContent > .optionButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+}
+.modalContainer .modalWrapper > .modalContent > .optionButtonsContainer > button {
+  padding: 1em;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.modalContainer .modalWrapper > .modalContent > .optionButtonsContainer > .button:first-child {
+  background: #ffffff;
+  color: #292929;
+  border: none;
+}
+
+/*# sourceMappingURL=modal.css.map */

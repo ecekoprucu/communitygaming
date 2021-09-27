@@ -1,0 +1,10 @@
+.headerWrapper {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 0.5px solid #cac9c9;
+}
+
+/*# sourceMappingURL=header.css.map */

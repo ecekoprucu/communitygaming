@@ -1,0 +1,61 @@
+$full-width: 100vw;
+$full-height: 100vh;
+
+.modalContainer {
+  width: $full-width;
+  height: $full-height;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  >.bgShadow {
+    width: $full-width;
+    height: $full-height;
+    background-color: #474646;
+    opacity: 0.5;
+    position: absolute;
+  }
+
+  .modalWrapper {
+    background-color: #ffffff;
+    opacity: 1;
+    z-index: 3;
+
+    >.modalHeader {
+      background-color: #cbcbcb;
+      padding: 1em;
+    }
+
+    >.modalContent {
+      padding: 2em 3em;
+
+      span {
+        font-weight: 800;
+      }
+
+      >.optionButtonsContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em;
+
+        > button {
+          padding: 1em;
+          font-weight: bolder;
+          font-size: 18px;
+        }
+
+        >.button:first-child {
+          background: #ffffff;
+          color: #292929;
+          border: none;
+        }
+      }
+
+    }
+  }
+}

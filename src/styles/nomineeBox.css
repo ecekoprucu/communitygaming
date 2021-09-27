@@ -1,0 +1,102 @@
+.nomineeBoxContainer {
+  background-color: #e9e5e5;
+  font-size: 14px;
+}
+.nomineeBoxContainer > .imgWrapper {
+  position: relative;
+}
+.nomineeBoxContainer > .imgWrapper > .pointsWrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 1em;
+  background: #19d2ce;
+}
+.nomineeBoxContainer > .imgWrapper > .pointsWrapper > p:first-child {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+.nomineeBoxContainer > .imgWrapper > .pointsWrapper > p:nth-child(2) {
+  font-size: 13px;
+  font-weight: 400;
+}
+.nomineeBoxContainer > .imgWrapper > .pointsWrapper p {
+  margin: 0;
+}
+.nomineeBoxContainer > .imgWrapper > img {
+  width: 100%;
+}
+.nomineeBoxContainer > .detailWrapper p {
+  display: inline-block;
+}
+.nomineeBoxContainer > .detailWrapper p:first-child:not(.description) {
+  font-size: larger;
+}
+.nomineeBoxContainer > .detailWrapper p:nth-child(odd) {
+  font-weight: 800;
+  margin-right: 5px;
+}
+.nomineeBoxContainer > .optionsWrapper, .nomineeBoxContainer .optionsWrapper div {
+  display: flex;
+  justify-content: space-between;
+}
+.nomineeBoxContainer > .detailWrapper, .nomineeBoxContainer .optionsWrapper {
+  padding: 1em;
+}
+.nomineeBoxContainer:hover {
+  box-shadow: -2px 1px 20px -2px rgba(0, 0, 0, 0.51);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  justify-content: flex-start;
+  gap: 1em;
+  padding: 5px;
+  cursor: pointer;
+  height: 25px;
+  font-size: 13px;
+  font-weight: lighter;
+  background-color: #19d2ce;
+  border: 1px solid #19d2ce;
+  color: #ffffff;
+}
+.button.downButton {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  justify-content: flex-start;
+  gap: 1em;
+  padding: 5px;
+  cursor: pointer;
+  height: 25px;
+  font-size: 13px;
+  font-weight: lighter;
+  background: none;
+  border: 1px solid #19d2ce;
+  color: #19d2ce;
+}
+.button.deleteButton {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  justify-content: flex-start;
+  gap: 1em;
+  padding: 5px;
+  cursor: pointer;
+  height: 25px;
+  font-size: 13px;
+  font-weight: lighter;
+  background-color: #a9523c;
+  border-color: #a9523c;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=nomineeBox.css.map */

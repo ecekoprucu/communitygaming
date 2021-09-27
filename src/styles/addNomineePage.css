@@ -1,0 +1,39 @@
+.addPageContainer {
+  position: relative;
+}
+
+.backButtonWrapper {
+  padding: 1em 5em;
+}
+
+.formWrapper {
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formWrapper > p:first-child {
+  font-weight: 800;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 3em;
+}
+.formWrapper > form {
+  width: 25%;
+}
+@media (max-width: 1025px) {
+  .formWrapper > form {
+    width: 100%;
+  }
+}
+
+.addNomineeButton {
+  background-color: lightgreen;
+  font-weight: 800;
+  border: 0;
+  padding: 1em;
+  float: right;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=addNomineePage.css.map */

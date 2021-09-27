@@ -1,0 +1,59 @@
+$button-primary: #e8e8e8;
+$button-secondary: #19d2ce;
+$bold-weight: 800;
+$shadow:  -2px 1px 20px -2px rgba(0,0,0,0.51);
+
+.text-clear {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin buttonComponent($type) {
+  display: flex;
+  width: 150px;
+  padding: 1em;
+  justify-content: space-evenly;
+  font-weight: $bold-weight;
+  border-radius: 4px;
+  align-items: center;
+  cursor: pointer;
+
+    @if ($type == 'add') {
+      background: $button-primary;
+    } @else if ($type == 'edit') {
+      background: $button-secondary;
+    }
+}
+
+.buttonComponent {
+  @include buttonComponent($type: 'add');
+    &.sortButton {
+      @include buttonComponent($type: 'edit');
+    }
+
+    &.backButton {
+      @include buttonComponent($type: 'back');
+
+
+    }
+}
+
+
+.sortTypes {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  >button {
+    background: #f5f4f4;
+    font-weight: $bold-weight;
+    border: 1px solid #ffffff;
+    padding: 1em 3em;
+    margin-bottom: 3px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: $shadow;
+    }
+  }
+}
+

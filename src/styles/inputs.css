@@ -1,0 +1,25 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.inputWrapper > label {
+  font-size: 13px;
+}
+@media (max-width: 1025px) {
+  .inputWrapper > label {
+    font-size: 15px;
+  }
+}
+.inputWrapper > .tournament_info {
+  font-size: 18px;
+  padding: 1em;
+  border: none;
+  border-bottom: 1px solid black;
+  background: inherit;
+}
+.inputWrapper > .tournament_info:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=inputs.css.map */
