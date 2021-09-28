@@ -58,7 +58,7 @@ const MainPage = ({tournaments}) => {
     return (
        <div className={showModal ? 'no-overflow' : ''}>
            <Header/>
-           <Alert show={showAlert} nomineeName={findNominee(selectedNominee)} type="delete"/>
+           <Alert show={showAlert} type="delete"/>
            <div className="buttonsContainer">
                <Button type='add'/>
                <Button type="sort" sortFunc={sortNominees}/>

@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/alert.scss';
 
-const Alert = ({type, show, nomineeName}) => {
+const Alert = ({type, show}) => {
 
     return show ? (
         <div className="alertWrapper">
