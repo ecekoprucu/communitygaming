@@ -13,30 +13,35 @@ const MainPage = ({tournaments}) => {
     });
     const [showModal, setShowModal] = useState(false);
     const [selectedNominee, setSelectedNominee] = useState(0);
-    const [sort, setSort] = useState('default');
+    const [sort, setSort] = useState(() => localStorage.getItem('sortType') ? localStorage.getItem('sortType') : 'default');
     const [showAlert, setShowAlert] = useState(false);
+
 
     useEffect(() => {
         setPageState({
             ...pageState,
             tournaments: tournaments
         })
-    }, [tournaments])
+    }, [tournaments]);
 
     useEffect(() => {
         if(sort === 'asc') {
             const newTournamentList = pageState.tournaments.sort((a, b) => a.points - b.points);
             setPageState({...pageState, tournaments: newTournamentList});
+            localStorage.setItem('sortType', 'asc');
         } if(sort === 'desc') {
             const newTournamentList = pageState.tournaments.sort((a, b) => b.points - a.points);
             setPageState({...pageState, tournaments: newTournamentList});
+            localStorage.setItem('sortType', 'desc');
         } if(sort === 'default'){
             const newTournamentList = pageState.tournaments.sort((a, b) => {
                return b.created - a.created;
             });
             setPageState({...pageState, tournaments: newTournamentList});
+            localStorage.setItem('sortType', 'default');
         }
     }, [sort])
+
 
     function sortNominees (sortType) {
         sortType === 'asc' ? setSort('asc') : sortType === 'desc' ? setSort('desc') : setSort('default');
