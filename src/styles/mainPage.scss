@@ -24,6 +24,7 @@ $tabletWidth: 1025px;
 
   @media (max-width: $tabletWidth) {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
     padding: 0;
   }
 }

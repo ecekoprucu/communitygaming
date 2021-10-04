@@ -24,6 +24,7 @@
 @media (max-width: 1025px) {
   .contentContainer {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
     padding: 0;
   }
 }
